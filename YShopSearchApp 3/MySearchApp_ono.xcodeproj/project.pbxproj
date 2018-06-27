@@ -16,6 +16,9 @@
 		11C1D53F1F9CCBF1007B53DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C1D53D1F9CCBF1007B53DE /* Main.storyboard */; };
 		11C1D5411F9CCBF1007B53DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11C1D5401F9CCBF1007B53DE /* Assets.xcassets */; };
 		11C1D5441F9CCBF1007B53DE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11C1D5421F9CCBF1007B53DE /* LaunchScreen.storyboard */; };
+		8A16296B20E3F6D100FECC42 /* CategorySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A16296A20E3F6D100FECC42 /* CategorySearchViewController.swift */; };
+		8A16296D20E3FBBE00FECC42 /* RankTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A16296C20E3FBBE00FECC42 /* RankTableViewController.swift */; };
+		8A16296F20E3FC4C00FECC42 /* TrendTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A16296E20E3FC4C00FECC42 /* TrendTableViewController.swift */; };
 		8AAC7F8E20E30BBF00CCD75B /* PageView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAC7F8D20E30BBF00CCD75B /* PageView.storyboard */; };
 		8AC2C10A20E3A3B6004A440C /* backGround in Resources */ = {isa = PBXBuildFile; fileRef = 8AC2C10920E3A3B6004A440C /* backGround */; };
 		8AC2C11620E3AB60004A440C /* StartPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC2C11520E3AB60004A440C /* StartPageViewController.swift */; };
@@ -33,6 +36,9 @@
 		11C1D5401F9CCBF1007B53DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11C1D5431F9CCBF1007B53DE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11C1D5451F9CCBF1007B53DE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8A16296A20E3F6D100FECC42 /* CategorySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySearchViewController.swift; sourceTree = "<group>"; };
+		8A16296C20E3FBBE00FECC42 /* RankTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewController.swift; sourceTree = "<group>"; };
+		8A16296E20E3FC4C00FECC42 /* TrendTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendTableViewController.swift; sourceTree = "<group>"; };
 		8AAC7F8D20E30BBF00CCD75B /* PageView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PageView.storyboard; sourceTree = "<group>"; };
 		8AC2C10920E3A3B6004A440C /* backGround */ = {isa = PBXFileReference; lastKnownFileType = folder; name = backGround; path = MySearchApp/Assets.xcassets/backGround; sourceTree = "<group>"; };
 		8AC2C11520E3AB60004A440C /* StartPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartPageViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +87,9 @@
 				115F700E1FA4560000FD16A9 /* ItemTableViewCell.swift */,
 				115F70121FA4774500FD16A9 /* WebViewController.swift */,
 				8AAC7F8D20E30BBF00CCD75B /* PageView.storyboard */,
+				8A16296A20E3F6D100FECC42 /* CategorySearchViewController.swift */,
+				8A16296C20E3FBBE00FECC42 /* RankTableViewController.swift */,
+				8A16296E20E3FC4C00FECC42 /* TrendTableViewController.swift */,
 			);
 			path = MySearchApp;
 			sourceTree = "<group>";
@@ -159,13 +168,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A16296B20E3F6D100FECC42 /* CategorySearchViewController.swift in Sources */,
 				115F70111FA457FF00FD16A9 /* SearchItemTableViewController.swift in Sources */,
 				115F70131FA4774500FD16A9 /* WebViewController.swift in Sources */,
 				115F700F1FA4560000FD16A9 /* ItemTableViewCell.swift in Sources */,
 				115F700D1FA0957F00FD16A9 /* ItemSearchResultSet.swift in Sources */,
 				11C1D53C1F9CCBF1007B53DE /* ViewController.swift in Sources */,
+				8A16296D20E3FBBE00FECC42 /* RankTableViewController.swift in Sources */,
 				11C1D53A1F9CCBF1007B53DE /* AppDelegate.swift in Sources */,
 				8AC2C11620E3AB60004A440C /* StartPageViewController.swift in Sources */,
+				8A16296F20E3FC4C00FECC42 /* TrendTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

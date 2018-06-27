@@ -147,7 +147,7 @@
         <!--お好み検索-->
         <scene sceneID="osx-QE-H5X">
             <objects>
-                <viewController id="ftr-eK-L1C" sceneMemberID="viewController">
+                <viewController id="ftr-eK-L1C" customClass="CategorySearchViewController" customModule="MySearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="v3P-9o-zbc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -174,30 +174,42 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDD-SW-Oh8">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zDD-SW-Oh8" userLabel="Rank Button">
                                 <rect key="frame" x="67" y="288" width="82" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="PqU-aF-NAj" kind="push" id="0kc-m9-JOy"/>
+                                    <segue destination="PqU-aF-NAj" kind="push" id="NYb-zE-HJn"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hy9-Ti-zaq">
                                 <rect key="frame" x="245" y="288" width="88" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="L5v-Wk-D6Y" kind="push" id="QgQ-WR-5WT"/>
+                                    <segue destination="L5v-Wk-D6Y" kind="push" id="pVR-XY-azd"/>
                                 </connections>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZQI-Ej-ERU">
-                                <rect key="frame" x="153" y="230" width="109" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <segments>
-                                    <segment title="Men"/>
-                                    <segment title="Ladies"/>
-                                </segments>
-                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="現在の人気ランキングと" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qMH-EI-PAY">
+                                <rect key="frame" x="0.0" y="109" width="414" height="25.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人気急上昇の商品をご紹介します" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEZ-zu-2CQ">
+                                <rect key="frame" x="0.0" y="153" width="414" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nEZ-zu-2CQ" firstAttribute="leading" secondItem="aSc-ba-xII" secondAttribute="leading" id="Qr5-il-a1C"/>
+                            <constraint firstItem="qMH-EI-PAY" firstAttribute="top" secondItem="aSc-ba-xII" secondAttribute="top" constant="45" id="Zsu-Xn-6XM"/>
+                            <constraint firstItem="nEZ-zu-2CQ" firstAttribute="top" secondItem="qMH-EI-PAY" secondAttribute="bottom" constant="18.670000000000002" id="h5R-7W-9Ar"/>
+                            <constraint firstItem="nEZ-zu-2CQ" firstAttribute="trailing" secondItem="aSc-ba-xII" secondAttribute="trailing" id="h7J-hJ-hCD"/>
+                            <constraint firstItem="qMH-EI-PAY" firstAttribute="leading" secondItem="aSc-ba-xII" secondAttribute="leading" id="umc-Uw-4ly"/>
+                            <constraint firstItem="qMH-EI-PAY" firstAttribute="trailing" secondItem="aSc-ba-xII" secondAttribute="trailing" id="wPa-W3-3V5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aSc-ba-xII"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="お好み検索" image="28957" selectedImage="28957" id="jnO-7v-tan">
@@ -209,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fPF-6r-mgB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2366.25" y="882.5"/>
+            <point key="canvasLocation" x="2365.217391304348" y="882.06521739130437"/>
         </scene>
         <!--Web View Controller-->
         <scene sceneID="pVb-Jz-SC9">
@@ -237,6 +249,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fVn-m6-8Bb"/>
                     </view>
+                    <navigationItem key="navigationItem" id="AKz-qF-oeI"/>
                     <connections>
                         <outlet property="webView" destination="AeJ-dv-1n3" id="y68-ym-vEV"/>
                     </connections>
@@ -325,17 +338,17 @@
         <!--キーワード検索-->
         <scene sceneID="lxz-ZM-aRn">
             <objects>
-                <tableViewController title="キーワード検索" id="PqU-aF-NAj" customClass="SearchItemTableViewController" customModule="MySearchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="キーワード検索" id="PqU-aF-NAj" customClass="RankTableViewController" customModule="MySearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="aL0-yi-5La">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="vdj-5F-3VW" customClass="ItemTableViewCell" customModule="MySearchApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="itemCell" id="vdj-5F-3VW" customClass="ItemTableViewCell" customModule="MySearchApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vdj-5F-3VW" id="KaF-Zs-ej1">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119.66666666666667"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="119.66666666666667"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zbI-77-N5T">
@@ -346,13 +359,13 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m8p-Sa-S15">
-                                            <rect key="frame" x="118" y="10" width="286" height="78.666666666666671"/>
+                                            <rect key="frame" x="118" y="10" width="248" height="78.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="価格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vtw-Hg-1fb">
-                                            <rect key="frame" x="118" y="88.666666666666671" width="286" height="21"/>
+                                            <rect key="frame" x="118" y="88.666666666666671" width="248" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="5Z6-Mz-E5B"/>
                                             </constraints>
@@ -377,6 +390,7 @@
                                     <outlet property="itemImageView" destination="zbI-77-N5T" id="52A-ef-mXU"/>
                                     <outlet property="itemPriceLabel" destination="vtw-Hg-1fb" id="9Gg-6t-EHg"/>
                                     <outlet property="itemTitleLabel" destination="m8p-Sa-S15" id="u3W-Hr-J3q"/>
+                                    <segue destination="goy-Eb-ima" kind="push" id="NKd-ny-w4r"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -392,22 +406,22 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lJ4-Nx-3Ye" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3152" y="882"/>
+            <point key="canvasLocation" x="3151" y="709"/>
         </scene>
         <!--キーワード検索-->
         <scene sceneID="rx9-lb-wsZ">
             <objects>
-                <tableViewController title="キーワード検索" id="L5v-Wk-D6Y" customClass="SearchItemTableViewController" customModule="MySearchApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="キーワード検索" id="L5v-Wk-D6Y" customClass="TrendTableViewController" customModule="MySearchApp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9tP-N8-q7v">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="itemCell" id="prm-LG-BrQ" customClass="ItemTableViewCell" customModule="MySearchApp" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="itemCell" id="prm-LG-BrQ" customClass="ItemTableViewCell" customModule="MySearchApp" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="414" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="prm-LG-BrQ" id="vok-d5-mqo">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="119.66666666666667"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="376" height="119.66666666666667"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vgu-va-o0c">
@@ -418,13 +432,13 @@
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="商品名" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qnv-dU-VgR">
-                                            <rect key="frame" x="118" y="10" width="286" height="78.666666666666671"/>
+                                            <rect key="frame" x="118" y="10" width="248" height="78.666666666666671"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="価格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32z-pe-FVo">
-                                            <rect key="frame" x="118" y="88.666666666666671" width="286" height="21"/>
+                                            <rect key="frame" x="118" y="88.666666666666671" width="248" height="21"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="21" id="oLE-Ee-W9n"/>
                                             </constraints>
@@ -449,11 +463,12 @@
                                     <outlet property="itemImageView" destination="vgu-va-o0c" id="Bdx-pu-WEz"/>
                                     <outlet property="itemPriceLabel" destination="32z-pe-FVo" id="Dfy-d8-fK3"/>
                                     <outlet property="itemTitleLabel" destination="Qnv-dU-VgR" id="0pp-gO-1e5"/>
+                                    <segue destination="goy-Eb-ima" kind="push" id="p9s-LF-5m6"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="L5v-Wk-D6Y" id="hOa-JH-5ZY"/>
+                            <outlet property="dataSource" destination="L5v-Wk-D6Y" id="54B-8u-qmA"/>
                             <outlet property="delegate" destination="L5v-Wk-D6Y" id="DUe-Yx-DpP"/>
                         </connections>
                     </tableView>
@@ -472,4 +487,7 @@
         <image name="rankIcon" width="42" height="42"/>
         <image name="upIcon" width="42" height="42"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="NKd-ny-w4r"/>
+    </inferredMetricsTieBreakers>
 </document>
